@@ -4,6 +4,7 @@ class Quadrilateral {
     this.side2 = side2
     this.side3 = side3
     this.side4 = side4
+
   }
   getPerimeter() {
     return this.side1 + this.side2 + this.side3 + this.side4
@@ -14,14 +15,16 @@ class Rectangle extends Quadrilateral {
   constructor(length, width) {
     super(length, width, length, width)
   }
-  getArea(s1, s2) {
-    this.s1 = s1
-    this.s2 = s2
+
+  getArea() {
+    return this.side1 * this.side2
   }
 }
 
-class Square {
-
+class Square extends Rectangle {
+  constructor(side) {
+    super(side, side)
+  }
 }
 
 /* Be creative with this one! */
