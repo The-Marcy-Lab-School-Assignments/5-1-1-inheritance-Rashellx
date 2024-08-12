@@ -25,6 +25,7 @@ class Square extends Rectangle {
   constructor(side) {
     super(side, side)
   }
+  /* Missing get diagonal method. This will get all you test cases to pass*/
 }
 
 /* Be creative with this one! */
